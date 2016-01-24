@@ -1,43 +1,48 @@
 " Author: Filipe Deschamps
 " Source: https://github.com/filipedeschamps/dotfiles
 
-" # GENERAL SETTINGS
-
-" ## COMPATIBILITY
-" ## Set 'nocompatible' to avoid unexpected things that your distro might have
+" COMPATIBILITY
+" Set 'nocompatible' to avoid unexpected things that your distro might have
 set nocompatible
 
-" ## SYNTAX
-" ## Enable syntax highlighting
+" BUNDLE
+" Automatically download vim-plug if it doesn't exist
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+
+" SYNTAX
+" Enable syntax highlighting
 syntax on
 
-" ## SEARCH
-" ## Highlight search term. Use :nohl to redraw screen and disable highlight
+" SEARCH
+" Highlight search term. Use :nohl to redraw screen and disable highlight
 set hlsearch
 
-" ## Use case insensitive search, except when using capital letters
+" Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
 
-" ## AUTO IDENTATION
-" ## Enable auto identation with 'spaces' instead of 'tabs'
+" AUTO IDENTATION
+" Enable auto identation with 'spaces' instead of 'tabs'
 set smartindent
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 
-" ## MOVING BETWEEN FILES
-" ## Set 'hidden' if you want to open a new file inside the same buffer without the
-" ## need to save it first (if there's any unsaved changes).
+" MOVING BETWEEN FILES
+" Set 'hidden' if you want to open a new file inside the same buffer without the
+" need to save it first (if there's any unsaved changes).
 set hidden
 
-" ## REMEMBER THIGS
-" ## Tell vim to remember certain things when we exit
-" ##  '10  :  marks will be remembered for up to 10 previously edited files
-" ##  "100 :  will save up to 100 lines for each register
-" ##  :20  :  up to 20 lines of command-line history will be remembered
-" ##  %    :  saves and restores the buffer list
-" ##  n... :  where to save the viminfo files
+" REMEMBER THIGS
+" Tell vim to remember certain things when we exit
+"  '10  :  marks will be remembered for up to 10 previously edited files
+"  "100 :  will save up to 100 lines for each register
+"  :20  :  up to 20 lines of command-line history will be remembered
+"  %    :  saves and restores the buffer list
+"  n... :  where to save the viminfo files
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
 function! ResCur()
@@ -53,8 +58,8 @@ augroup resCur
 augroup END
 
 
-" ## BACKUP
-" ## Disable all backup files, never used them
+" BACKUP
+" Disable all backup files, never used them
 set nobackup
 set nowritebackup
 set noswapfile
