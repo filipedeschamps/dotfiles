@@ -51,3 +51,10 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
+
+
+" ## BACKUP
+" ## Disable all backup files, never used them
+set nobackup
+set nowritebackup
+set noswapfile
