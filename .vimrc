@@ -15,6 +15,7 @@ endif
 call plug#begin('~/.vim/bundle')
 
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'scrooloose/syntastic'
 
 call plug#end()
 
@@ -23,13 +24,16 @@ call plug#end()
 " Enable syntax highlighting
 syntax on
 
+
 " SEARCH
 " Highlight search term. Use :nohl to redraw screen and disable highlight
 set hlsearch
 
+
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+
 
 " AUTO IDENTATION
 " Enable auto identation with 'spaces' instead of 'tabs'
@@ -38,10 +42,12 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
+
 " MOVING BETWEEN FILES
 " Set 'hidden' if you want to open a new file inside the same buffer without the
 " need to save it first (if there's any unsaved changes).
 set hidden
+
 
 " REMEMBER THIGS
 " Tell vim to remember certain things when we exit
@@ -70,3 +76,20 @@ augroup END
 set nobackup
 set nowritebackup
 set noswapfile
+
+
+" SYNTASTIC
+" Syntastic is a syntax checking plugin for Vim that runs files through
+" external syntax checkers and displays any resulting errors to the user.
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Configure Eslint, but run it with 'eslint_d', a faster version of Eslint
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
