@@ -16,6 +16,7 @@ call plug#begin('~/.vim/bundle')
 
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'scrooloose/syntastic'
+    Plug 'tomasr/molokai'
 
 call plug#end()
 
@@ -93,3 +94,8 @@ let g:syntastic_check_on_wq = 0
 " Configure Eslint, but run it with 'eslint_d', a faster version of Eslint
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
+
+
+" COLOR SCHEME
+" Load molokai (alternative to Monokai from TextMate) color scheme
+colorscheme molokai
