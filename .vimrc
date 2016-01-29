@@ -99,3 +99,10 @@ let g:syntastic_javascript_eslint_exec = 'eslint_d'
 " COLOR SCHEME
 " Load molokai (alternative to Monokai from TextMate) color scheme
 colorscheme molokai
+
+" FONT
+set guifont=Monaco\ for\ Powerline:h12
+set antialias
+
+" ENCODING
+set encoding=utf-8
