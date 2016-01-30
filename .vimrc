@@ -106,3 +106,10 @@ set antialias
 
 " ENCODING
 set encoding=utf-8
+
+" COMMAND LINE
+" Enhanced command line completion
+set wildmenu
+
+" Complete files like a shell
+set wildmode=list:longest
