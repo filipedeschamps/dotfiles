@@ -40,8 +40,8 @@ set smartcase
 " Enable auto identation with 'spaces' instead of 'tabs'
 set smartindent
 set expandtab
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 
 
 " MOVING BETWEEN FILES
