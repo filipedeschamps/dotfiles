@@ -17,6 +17,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'scrooloose/syntastic'
     Plug 'tomasr/molokai'
+    Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 call plug#end()
 
@@ -29,7 +30,6 @@ syntax on
 " SEARCH
 " Highlight search term. Use :nohl to redraw screen and disable highlight
 set hlsearch
-
 
 " Use case insensitive search, except when using capital letters
 set ignorecase
@@ -113,3 +113,11 @@ set wildmenu
 
 " Complete files like a shell
 set wildmode=list:longest
+
+" SEARCH
+" Vim will start searching as you type
+set incsearch
+
+" FILE NUMBERS
+" Enable relative and absolute file numbers
+autocmd BufEnter * :call NumberToggle()
