@@ -18,6 +18,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'scrooloose/syntastic'
     Plug 'tomasr/molokai'
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
+    Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
@@ -121,3 +122,7 @@ set incsearch
 " FILE NUMBERS
 " Enable relative and absolute file numbers
 autocmd BufEnter * :call NumberToggle()
+
+" WRAP
+" Stop wrapping long lines
+set nowrap
