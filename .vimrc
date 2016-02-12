@@ -19,6 +19,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'tomasr/molokai'
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
     Plug 'editorconfig/editorconfig-vim'
+    Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
 
