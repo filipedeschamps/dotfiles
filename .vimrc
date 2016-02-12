@@ -20,6 +20,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'vim-scripts/AutoComplPop'
+    Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
