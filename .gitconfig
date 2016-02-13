@@ -1,5 +1,6 @@
 [push]
 	default = simple
+	followTags = true
 [user]
 	email = filiped@gmail.com
 	name = Filipe Deschamps
