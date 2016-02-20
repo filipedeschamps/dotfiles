@@ -21,6 +21,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'editorconfig/editorconfig-vim'
     Plug 'vim-scripts/AutoComplPop'
     Plug 'Raimondi/delimitMate'
+    Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -132,3 +133,9 @@ set nowrap
 " AUTORELOAD
 " Automatically reload buffers when file changes
 set autoread
+
+" PLUGINS CONFIGURATIONS
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
