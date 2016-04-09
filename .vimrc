@@ -95,10 +95,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" Configure Eslint, but run it with 'eslint_d', a faster version of Eslint
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
-
+" Configure Standar JS as default linter
+let g:syntastic_javascript_checkers = ['standard']
 
 " COLOR SCHEME
 " Load molokai (alternative to Monokai from TextMate) color scheme
