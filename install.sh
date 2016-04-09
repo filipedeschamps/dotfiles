@@ -10,5 +10,6 @@ ln -s $(pwd)/.gitconfig ~/.gitconfig
 echo "Installing binaries"
 brew install gnu-sed
 npm install -g diff-so-fancy
+npm install -g standard-format
 
 echo "Done!"
