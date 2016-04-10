@@ -1,6 +1,10 @@
 " Author: Filipe Deschamps
 " Source: https://github.com/filipedeschamps/dotfiles
 
+" LEADER KEY
+let mapleader=","
+
+
 " COMPATIBILITY
 " Set 'nocompatible' to avoid unexpected things that your distro might have
 set nocompatible
@@ -22,6 +26,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'vim-scripts/AutoComplPop'
     Plug 'Raimondi/delimitMate'
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
