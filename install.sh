@@ -27,10 +27,6 @@ brew cask install macvim
 echo "Installing Slack"
 brew cask install slack
 
-brew install gnu-sed
-npm install -g diff-so-fancy
-npm install -g standard-format
-
 echo "Installing Node.js"
 brew install node
 
@@ -48,6 +44,9 @@ brew cask install dockertoolbox
 
 echo "Creating Docker Virtual Machine"
 docker-machine create --driver virtualbox default
+
+echo "Installing TunnelBlick"
+brew cask install tunnelblick
 
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
