@@ -48,6 +48,9 @@ docker-machine create --driver virtualbox default
 echo "Installing TunnelBlick"
 brew cask install tunnelblick
 
+echo "Installing Skype"
+brew cask install skype
+
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
