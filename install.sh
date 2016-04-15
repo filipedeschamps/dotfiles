@@ -15,6 +15,9 @@ echo "Installing Homebrew"
 echo "Installing wget"
 brew install wget
 
+echo "Installing The Silver Searcher"
+brew install the_silver_searcher
+
 echo "Installing Cask"
 brew tap caskroom/cask
 

@@ -27,6 +27,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'Raimondi/delimitMate'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'scrooloose/nerdcommenter'
+    Plug 'rking/ag.vim'
 
 call plug#end()
 
