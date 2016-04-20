@@ -41,6 +41,9 @@ syntax on
 " Highlight search term. Use :nohl to redraw screen and disable highlight
 set hlsearch
 
+" Make Ag search from your project root
+let g:ag_working_path_mode="r"
+
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
