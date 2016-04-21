@@ -91,3 +91,6 @@ eval "$(nodenv init -)"
 
 # Configure your shell to connect to Docker VM
 eval $(docker-machine env)
+
+alias work='cd ~/local/work/development/'
+alias personal='cd ~/local/personal/'
