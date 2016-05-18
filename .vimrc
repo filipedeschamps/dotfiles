@@ -105,7 +105,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Configure Standar JS as default linter
-let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " COLOR SCHEME
 " Load molokai (alternative to Monokai from TextMate) color scheme
@@ -146,3 +146,6 @@ set autoread
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+nnoremap <leader>st :SyntasticToggleMode<cr>
+
