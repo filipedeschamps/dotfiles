@@ -45,8 +45,12 @@ nodenv install 0.11.14
 echo "Installing Docker Toolbox"
 brew cask install dockertoolbox
 
-echo "Creating Docker Virtual Machine"
-docker-machine create --driver virtualbox default
+echo "Installing Dinghy"
+brew tap codekitchen/dinghy
+brew install dinghy
+
+echo "Creating Docker VM"
+dinghy create --provider virtualbox
 
 echo "Installing TunnelBlick"
 brew cask install tunnelblick
