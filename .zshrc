@@ -89,8 +89,5 @@ export NVM_DIR="/Users/filipedeschamps/.nvm"
 # Nodenv configuration
 eval "$(nodenv init -)"
 
-# Configure your shell to connect to Docker VM
-eval $(dinghy env)
-
 alias work='cd ~/local/work/development/'
 alias personal='cd ~/local/personal/'

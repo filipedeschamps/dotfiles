@@ -42,16 +42,6 @@ brew install nodenv
 echo "[Pagar.me] Installing Node.js 0.11.14"
 nodenv install 0.11.14
 
-echo "Installing Docker Toolbox"
-brew cask install dockertoolbox
-
-echo "Installing Dinghy"
-brew tap codekitchen/dinghy
-brew install dinghy
-
-echo "Creating Docker VM"
-dinghy create --provider virtualbox
-
 echo "Installing TunnelBlick"
 brew cask install tunnelblick
 
