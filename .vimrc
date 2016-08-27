@@ -8,6 +8,7 @@ let mapleader=","
 " COMPATIBILITY
 " Set 'nocompatible' to avoid unexpected things that your distro might have
 set nocompatible
+set t_ut=
 
 " BUNDLE
 " Automatically download vim-plug if it doesn't exist
