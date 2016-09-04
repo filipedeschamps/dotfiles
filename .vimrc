@@ -148,5 +148,8 @@ set autoread
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Syntastic
 nnoremap <leader>st :SyntasticToggleMode<cr>
 
+" NERDTree
+nnoremap <leader>ft :NERDTreeToggle<cr>
