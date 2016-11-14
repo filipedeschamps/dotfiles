@@ -29,6 +29,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'scrooloose/nerdcommenter'
     Plug 'rking/ag.vim'
+    Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
