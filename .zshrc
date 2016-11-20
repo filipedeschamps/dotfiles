@@ -92,3 +92,4 @@ eval "$(nodenv init -)"
 
 alias work='cd ~/local/work/development/'
 alias personal='cd ~/local/personal/'
+alias convert='ffmpeg -i source.mov -crf 18 -color_primaries 6 -color_trc 6 -colorspace 6 -color_range 1 converted.mp4'
