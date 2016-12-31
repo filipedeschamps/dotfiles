@@ -107,7 +107,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Configure Standar JS as default linter
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['standard']
 
 " COLOR SCHEME
 " Load molokai (alternative to Monokai from TextMate) color scheme
