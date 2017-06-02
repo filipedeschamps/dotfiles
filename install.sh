@@ -31,17 +31,8 @@ brew cask install macvim
 echo "Installing Slack"
 brew cask install slack
 
-echo "Installing Node.js"
-brew install node
-
 echo "Installing nvm"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
-
-echo "[Pagar.me] Installing nodenv"
-brew install nodenv
-
-echo "[Pagar.me] Installing Node.js 0.11.14"
-nodenv install 0.11.14
 
 echo "Installing TunnelBlick"
 brew cask install tunnelblick
