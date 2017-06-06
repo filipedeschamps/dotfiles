@@ -87,9 +87,6 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Nodenv configuration
-eval "$(nodenv init -)"
-
 alias work='cd ~/local/work/development/'
 alias personal='cd ~/local/personal/'
 alias convert-youtube='ffmpeg -i source.mov -crf 18 -color_primaries 6 -color_trc 6 -colorspace 6 -color_range 1 converted.mp4'
