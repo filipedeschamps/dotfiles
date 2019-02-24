@@ -13,15 +13,6 @@ echo "Installing binaries:"
 echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "Installing wget"
-brew install wget
-
-echo "Installing The Silver Searcher"
-brew install the_silver_searcher
-
-echo "Installing Cask"
-brew tap caskroom/cask
-
 echo "Installing chrome"
 brew cask install google-chrome
 
@@ -32,13 +23,7 @@ echo "Installing Slack"
 brew cask install slack
 
 echo "Installing nvm"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
-
-echo "Installing TunnelBlick"
-brew cask install tunnelblick
-
-echo "Installing Skype"
-brew cask install skype
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
