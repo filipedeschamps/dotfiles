@@ -25,6 +25,9 @@ brew cask install slack
 echo "Installing Obs"
 brew cask install obs
 
+echo "Installing VLC"
+brew cask install vlc
+
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
