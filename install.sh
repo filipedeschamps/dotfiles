@@ -22,6 +22,9 @@ brew cask install macvim
 echo "Installing Slack"
 brew cask install slack
 
+echo "Installing Obs"
+brew cask install obs
+
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
