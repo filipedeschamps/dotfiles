@@ -90,3 +90,4 @@ export NVM_DIR="${HOME}/.nvm"
 alias work='cd ~/local/work/development/'
 alias personal='cd ~/local/personal/'
 alias convert-youtube='ffmpeg -i source.mov -crf 18 -color_primaries 6 -color_trc 6 -colorspace 6 -color_range 1 converted.mp4'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

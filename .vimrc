@@ -12,8 +12,10 @@ set t_ut=
 
 " BUNDLE
 " Automatically download vim-plug if it doesn't exist
-if empty(glob("~/.vim/autoload/plug.vim"))
-    execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " Configure vim-plug
@@ -133,7 +135,7 @@ set incsearch
 
 " FILE NUMBERS
 " Enable relative and absolute file numbers
-autocmd BufEnter * :call NumberToggle()
+set number relativenumber
 
 " WRAP
 " Stop wrapping long lines
