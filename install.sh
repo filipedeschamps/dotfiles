@@ -22,13 +22,13 @@ brew cask install macvim
 echo "Installing Slack"
 brew cask install slack
 
-echo "Installing nvm"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
 echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Appending custom .zshrc tail... remember to change the theme to 'kafeitu'"
+cat $(pwd)/.zshrc_tail >> ~/.zshrc
 
 echo "Done!"

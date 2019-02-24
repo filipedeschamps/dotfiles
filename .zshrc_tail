@@ -1,0 +1,10 @@
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim -f'
+fi
+
+alias work='cd ~/local/work/development/'
+alias personal='cd ~/local/personal/'
+alias film='cd ~/local/filmmaking/'
+
