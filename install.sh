@@ -28,6 +28,9 @@ brew cask install obs
 echo "Installing VLC"
 brew cask install vlc
 
+echo "Installing AWS CLI"
+brew install awscli
+
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
