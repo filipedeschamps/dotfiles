@@ -31,8 +31,11 @@ brew cask install vlc
 echo "Installing AWS CLI"
 brew install awscli
 
-echo "Install ffmpeg"
+echo "Installing ffmpeg"
 brew install ffmpeg
+
+echo "Installing imagemagick"
+brew install imagemagick
 
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
