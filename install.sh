@@ -16,11 +16,8 @@ echo "Installing Homebrew"
 echo "Installing chrome"
 brew cask install google-chrome
 
-echo "Installing MacVim"
-brew cask install macvim
-
-echo "Installing Slack"
-brew cask install slack
+echo "Installing VS Code"
+brew cask install visual-studio-code
 
 echo "Installing Obs"
 brew cask install obs
