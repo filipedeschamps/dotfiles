@@ -1,11 +1,8 @@
 # VIM
 echo "Symlinking things:"
 
-ln -s $(pwd)/.vimrc ~/.vimrc
-ln -s $(pwd)/.vim ~/.vim
 ln -s $(pwd)/.gitconfig ~/.gitconfig
-ln -s $(pwd)/.zshrc ~/.zshrc
-ln -s $(pwd)/.tmux.conf ~/.tmux.conf
+#ln -s $(pwd)/.zshrc ~/.zshrc
 
 # BINARIES
 echo "Installing binaries:"
@@ -22,25 +19,16 @@ brew cask install visual-studio-code
 echo "Installing Obs"
 brew cask install obs
 
-echo "Installing VLC"
-brew cask install vlc
-
 echo "Installing AWS CLI"
 brew install awscli
 
 echo "Installing ffmpeg"
 brew install ffmpeg
 
-echo "Installing imagemagick"
-brew install imagemagick
-
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
 echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-echo "Appending custom .zshrc tail... remember to change the theme to 'kafeitu'"
-cat $(pwd)/.zshrc_tail >> ~/.zshrc
 
 echo "Done!"
