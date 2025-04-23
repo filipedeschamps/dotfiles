@@ -33,6 +33,12 @@ brew install --cask betterdisplay
 echo "Installing The Unarchiver"
 brew install --cask the-unarchiver
 
+echo "Installing VLC"
+brew install --cask vlc
+
+echo "Installing yt-dlp"
+brew brew install yt-dlp
+
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
